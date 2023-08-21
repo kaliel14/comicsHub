@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camics Hub</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">CATEGORIA</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> KODOMO </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> SHOUNEN </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> SHOUJO </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> SEINEN </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> JOSEI </a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Camics</b>Hub</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categoria</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> KODOMO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> SHOUNEN </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> SHOUJO </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> SEINEN </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> JOSEI </a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="9b22fdc9b3c0a5e0c6373adba8b7ac61.jpe"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="35e4ac6339f5fdcc164160a5755790cd.jpe"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="JujutsuK_Poster1.webp"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="01ec367b44f0a568430a957e042639af.jpe" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="one-piece-vol-100.jpg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="e108ae17d8d0407417cac40eb52d849a.jpe" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">one punch man</h2>
+                        <p class="descrição__texto">Para seu entreterimento.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="Design sem nome.png" class="descrição__imagem">
+            
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="https://www.youtube.com/watch?v=erQURy_Ys5Y" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="Tokyo_Revengers_Anime_Key_Visual_2.1.webp"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="81yS2PMLZ0L._AC_UF1000,1000_QL80_.jpg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="Visual-2-3.jpg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="MV5BZjE0YjVjODQtZGY2NS00MDcyLThhMDAtZGQwMTZiOWNmNjRiXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="61pHIlKHh+L._AC_UF1000,1000_QL80_.jpg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="697c8b5ff2f49a97348b5507c06e1183.jpe" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Autora Koyoharu Gotouge</h3>
+                        <h2 class="descrição__titulo-livro">Koyoharu Gotouge</h2>
+                        <p class="descrição__texto">escritora de anime, Koyoharu Gotouge
+                            .
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="Design sem nome (2).png" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="https://www.youtube.com/watch?v=ep0w1F5FeNo" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Demon Slayer Vol.1</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Dragon Ball Z</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Jujutsu Kaisen </a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Naruto shippuden</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">One Piece</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Black Clover</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tokyo Revengers</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Chainsaw Man</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Camics Hub</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">entreterimento</li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class=""> bate bapo</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">para toda familha</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Parcerias</li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">Disney</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">netflix</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">Amazomn prime</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">youtube</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="lista-rodapé__link"></a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="lista-rodapé__link"></a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="lista-rodapé__link"></a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Comunidade</li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">discord</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">instagram</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">facebook</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">Like a Boss</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">tiktok</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">twitter</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="" alt="">
+                <a href="#" class="">whatsApp</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
